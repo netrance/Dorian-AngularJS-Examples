@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Includes CSS file(s) -->
+    <link href="ExTrustHtml.css" rel="stylesheet">
+
+    <!-- Includes JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="TrustHtmlService.js"></script>
+    <script src="ExController.js"></script>
+</head>
+
+<body ng-app='lee.dorian.ng.ExTrustHtml'>
+
+    <!-- A web page is loaded if you input an HTTP address and click Open button. -->
+    <div ng-controller='ExController'>
+        <input id="id_http_addr" type="text" ng-model="httpUrl"></input>
+        <center>
+            <button id="id_btn_open" ng-click="open()">Open</button>
+        </center>
+
+        <!-- This tag will include a iframe tag. -->
+        <div ng-bind-html="iframeTag">
+        </div>
+    </div>
+
+</body>
+
+</html>
