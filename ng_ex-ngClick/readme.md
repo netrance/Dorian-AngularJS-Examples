@@ -1,10 +1,11 @@
-Example - ng-bind-html Directive
+Example - ng-click Directive
 ------------------------
 
-This example shows how to use ng-bind-html directive of AngularJS.
+This example shows how to use ng-click directive of AngularJS.
 
 
 References
 ----------------
-- AngularJS ng-bind-html Directive
-  - https://www.w3schools.com/angular/ng_ng-bind-html.asp
+- AngularJS ng-click Directive
+  - https://docs.angularjs.org/api/ng/directive/ngClick
+  - https://www.w3schools.com/angular/ng_ng-click.asp
