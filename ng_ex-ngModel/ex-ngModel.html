@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!-- Runs AngularJS with ng-app directive. -->
+<!-- DOM objects of this file can use lee.dorian.ng.NgModel module. -->
+<html ng-app="lee.dorian.ng.NgModel">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Includes JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="NgModelController.js"></script>
+</head>
+
+<!-- This body object defines NgModelController controller. -->
+<body ng-controller="NgModelController">
+
+    <!-- This input element is binded to id property of NgModelController. -->
+    <!-- Whenever a user changes ID, the property is also updated. -->
+    <input type="text" placeholder="Input ID." ng-model="id">
+    <br/>
+
+    <!-- This input element is binded to password property of NgModelController. -->
+    <!-- Whenever a user changes password, the property is also updated. -->
+    <input type="password" placeholder="Input password." ng-model="password">
+    <br/>
+
+    <button ng-click="signIn()">Sign in</button>
+
+</body>
+
+</html>
