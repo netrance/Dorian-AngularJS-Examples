@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!-- Runs AngularJS with ng-app directive. -->
+<!-- DOM objects of this file can use lee.dorian.ng.NgBindHtml module. -->
+<html ng-app="lee.dorian.ng.NgChangeRadio">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Includes JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="NgChangeRadioController.js"></script>
+</head>
+
+<!-- This body object defines NgChangeController controller. -->
+<body ng-controller="NgChangeRadioController">
+
+    <input type="radio" name="bgcolor" value="red" ng-model="value" ng-change="changeBackgroundColor(value)">Red<br>
+    <input type="radio" name="bgcolor" value="green" ng-model="value" ng-change="changeBackgroundColor(value)">Green<br>
+    <input type="radio" name="bgcolor" value="blue" ng-model="value" ng-change="changeBackgroundColor(value)">Blue<br><br>
+
+</body>
+
+</html>
